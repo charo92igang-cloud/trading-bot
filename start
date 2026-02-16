@@ -1,0 +1,14 @@
+# Set your API key
+export SIMMER_API_KEY="your-key-here"
+
+# Dry run — see what would happen
+python fastloop_trader.py
+
+# Go live
+python fastloop_trader.py --live
+
+# Live + quiet (for cron/heartbeat loops)
+python fastloop_trader.py --live --quiet
+
+# Live + smart sizing (5% of balance per trade)
+python fastloop_trader.py --live --smart-sizing --quiet
